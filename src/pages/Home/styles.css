@@ -1,0 +1,26 @@
+.titles{
+	width: 100%;
+	max-width: 1000px;
+	margin: 80px 0 50px;
+}
+.titles h1{
+	margin-bottom: 20px;
+}
+.cards-container{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	justify-content: space-evenly;;
+}
+.pagination-container{
+	width: 100%;
+	max-width: max-content;
+	padding: 20px;
+	margin: 50px auto;
+}
+.pagination-container button, .pagination-container div{
+	color: white;
+}
+@media(max-width: 1023px){
+	
+}

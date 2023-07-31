@@ -1,0 +1,25 @@
+.title{
+	font-size: 45px;
+	font-weight: 700;
+}
+.subtitle{
+	font-size: 20px;
+}
+.container-form{
+	width: 100%;
+	max-width: 655px;
+	margin-top: 100px;
+}
+.container-checkbox{
+	margin: -40px 0 30px;
+	padding-left: 20px;
+}
+.container-checkbox span{
+	font-size: 20px;
+}
+.alertError{
+	margin: 20px 0 40px;
+}
+.labelInput{
+	padding-left: 20px;
+}

@@ -1,0 +1,11 @@
+.root{
+	width: 100vw;
+	min-height: 700px;
+	background-color: #03067B;
+	padding: 100px 100px;
+}
+@media(max-width: 1023px){
+	.root{
+		padding: 100px 50px;
+	}
+}

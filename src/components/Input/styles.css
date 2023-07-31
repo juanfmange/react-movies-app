@@ -1,0 +1,29 @@
+.input-container{
+	width: 100%;
+	max-width: 655px;
+	height: 66px;
+	margin-bottom: 60px;
+}
+.input-container input{
+	width: 655px;
+	height: 66px;
+	background-color: #5141EA;
+	color: #FFFFFF;
+	border: none;
+	border-radius: 50px;
+	padding: 0px 20px;
+	font-size: 20px;
+}
+.input-label, .input-container fieldset{
+	width: 100%;
+	height: 66px;
+	border-color: transparent !important;
+	margin-left: 0px !important;
+}
+.input-label span{
+	width: 100%;
+	font-size: 20px;
+}
+.input-container fieldset::hover{
+	border-color: transparent !important;
+}

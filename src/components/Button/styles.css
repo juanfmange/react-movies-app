@@ -1,0 +1,26 @@
+.button, .button-active{
+	width: 242px;
+	height: 66px;
+	border-radius: 50px;
+	color: #FFFFFF;
+	font-size: 30px;
+	font-weight: 600;
+	padding: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	transition: all .3s;
+	background: linear-gradient(102.31deg, rgba(58, 227, 195, 0.61) 12.56%, rgba(78, 108, 228, 0.84358) 85.09%, #563FF0 99.05%);
+}
+.button:hover{
+	background: linear-gradient(102.31deg, rgba(58, 227, 195, 0.61) 12.56%, rgba(58, 227, 195, 0.61) 85.09%, rgba(58, 227, 195, 0.61) 99.05%);
+	box-shadow: 0px 6px 12px rgba(0,0,0,.4);
+}
+.button-active{
+	background: #563FF0;
+}
+.button-active:hover{
+	background: #563FF0;
+	box-shadow: 0px 6px 12px rgba(0, 0, 0, .4);
+}
