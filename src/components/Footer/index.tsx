@@ -8,8 +8,8 @@ import './styles.css'
 const Footer = () => {
 	return (
 		<div className={'footer'}>
-			<Grid container spacing={2}>
-				<Grid item xs={12}>
+			<Grid container spacing={4}>
+				<Grid item xs={14}>
 					<div className={'footer-info'}>
 						<h4>We are coding the world of tomorrow_</h4>
 						<p>
@@ -25,7 +25,7 @@ const Footer = () => {
 						</p>
 					</div>
 				</Grid>
-				<Grid item xs={12}>
+				<Grid item xs={16}>
 					<div className={'footer-logos'}>
 						<img src={logo1} alt="logo1" />
 						<img src={logo2} alt="logo2" />

@@ -6,8 +6,8 @@ import Checkbox from '@mui/material/Checkbox';
 import Alert from '@mui/material/Alert';
 
 import { useDispatch } from 'react-redux';
-import { loginSuccess } from '../../store/modules/login';
-import { validateEmail } from '../../utils/validation';
+import { loginSuccess } from '../../movies/modules/login';
+import { validateEmail } from '../../utils/validationEmail';
 
 import TextInput from '../../components/Input';
 import Layout from '../../components/Layout';

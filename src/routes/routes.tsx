@@ -7,7 +7,7 @@ import Principal from '../pages/Home';
 import NotFound from '../pages/NotFound';
 
 import { useDispatch } from 'react-redux';
-import { loginSuccess } from '../store/modules/login';
+import { loginSuccess } from '../movies/modules/login';
 
 export const Router = () => {
 	const loginState = useSelector((state: any) => state.login);

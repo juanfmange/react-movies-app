@@ -1,5 +1,4 @@
 import axios from 'axios';
-// const TOKEN = import.meta.env.VITE_TOKEN
 const TOKEN = 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyYTgxMGE4MDIyZWUyYTY0MjRiZDE4MjEwOTIxZjJmZSIsInN1YiI6IjY0YzczY2VhNjNlNmZiMDExYjNhZmJiMyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.n_d-HyyxeY-3S_roE32bvHys4nxga2S_nhVYsZsJWDM';
 
 const options = {

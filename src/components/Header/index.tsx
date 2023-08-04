@@ -10,7 +10,7 @@ import './styles.css'
 
 import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux';
-import { logout } from '../../store/modules/login';
+import { logout } from '../../movies/modules/login';
 const Header = () => {
 	const dispatch = useDispatch();
 	const loginState = useSelector((state: any) => state.login);
