@@ -24,3 +24,18 @@
 	background: #563FF0;
 	box-shadow: 0px 6px 12px rgba(0, 0, 0, .4);
 }
+
+.button-disabled{
+	width: 242px;
+	height: 66px;
+	border-radius: 50px;
+	color: #FFFFFF;
+	font-size: 30px;
+	font-weight: 600;
+	padding: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: lightgrey;
+	cursor: default;
+}

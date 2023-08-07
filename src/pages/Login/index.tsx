@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect,useState } from 'react'
 
 import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
@@ -64,13 +64,15 @@ const BpCheckedIcon = styled(BpIcon)({
 
 const Login = () => {
 	const dispatch = useDispatch();
-	const [credentials, setCredentials] = useState({ email: 'hola@hola.com', password: '' });
+	const [credentials, setCredentials] = useState({ email: '', password: '' });
 	const [privacy, setPrivacy] = useState(false);
 	const [alert, setAlert] = useState({
 		show: false,
 		severity: 'error',
 		msg: ''
 	});
+
+	const [disabledLogin, setDisabledLogin] = useState(true);
 
 	const setData = (e: React.ChangeEvent<HTMLInputElement>) => {
 		resetAlerts();
@@ -114,6 +116,14 @@ const Login = () => {
 			setAlert({ show: true, severity: 'error', msg: 'Ocurrio un problema, intentalo más tarde' });
 		}
 	}
+
+	useEffect(() => {
+		if (!validateEmail(credentials.email) || credentials.password.length < 7 || !privacy) {
+			setDisabledLogin(true);
+		} else {
+			setDisabledLogin(false);
+		}
+	}, [credentials, privacy])
 
 	return (
 		<Layout>
@@ -165,7 +175,7 @@ const Login = () => {
 							<Alert severity={'error'} variant="filled">{alert.msg}</Alert>
 						</div>
 					)}
-					<Button onClick={handleSubmit} text={'Crear cuenta'} />
+					<Button disabled={disabledLogin} onClick={handleSubmit} text={'Crear cuenta'} />
 				</div>
 			</div>
 		</Layout>

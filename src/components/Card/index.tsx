@@ -20,11 +20,11 @@ export interface ICard {
 		vote_count: number
 	}
 }
-const URL_IMAGE = import.meta.env.VITE_URL_IMAGE
+const URL_IMAGE = 'https://image.tmdb.org/t/p/w500/'
 
 const index = ({ dataCard }: ICard) => {
 	return (
-		<div className='card' style={{ backgroundImage: 'url(' + URL_IMAGE + dataCard.poster_path + ')' }}>
+		<div className='card' style={{ backgroundImage: 'url(' + URL_IMAGE  + dataCard.poster_path + ')' }}>
 			<div className='card-content'>
 				<div>
 					<h4>{dataCard.title}</h4>
